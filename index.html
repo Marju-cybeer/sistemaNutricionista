@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt - br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <title>Sistema Nutricionista</title>
+</head>
+<body>
+    <div id="app">     
+        
+    <div class = "form-container">
+        <form action="">
+            <div class="logo"><img src="assets/logo.png"  alt="logo"></div>   
+            <div class="topo">Cadastrar Paciente</div>
+            <fieldset>
+                <div class="form-group">
+                    <label for="nomePaciente">Nome:</label>
+                    <input type="text" name="nome" id="nomePaciente">
+                    <label for="idadePaciente">Idade:</label>
+                    <input type="number" name="idade" id="idadePaciente">
+            </div>
+            <div class="form-group">
+                <label for="generoPaciente">Gênero:</label>
+                <input type="radio" id="r1" name="sexo" value="masculino"> Masculino
+                <input type="radio" id="r2" name="sexo" value="feminino"> Feminino 
+                <label for="pesoPaciente">Peso (kg):</label>
+                <input type="number" name="peso" id="pesoPaciente">
+                <label for="alturaPaciente">Altura (m):</label>
+                <input type="number" name="altura" id="alturaPaciente">
+            </div>
+            <div class="form-group">
+                <label for="cinturaPaciente">Cintura (cm):</label>
+                <input type="number" name="cintura" id="cinturaPaciente">
+                <label for="quadrilPaciente">Quadril (cm):</label>
+                <input type="number" name="quadril" id="quadrilPaciente">
+            </div>
+            <div class="form-buttons">
+                <button id="cadastrar" class="cadastrar-button"> Cadastrar Paciente </button>
+            </div>
+            </fieldset>
+        </form>
+    </div> 
+    <legend> Selecionar Paciente </legend>
+    <div class="selecionar">
+        <label for="selecionarPaciente">Paciente:</label>
+        <select  id="selecionarPaciente">
+            <option value=""> Selecione um paciente </option>
+        </select>
+        </div>
+    <div class="list-orders container-fluid">
+        <table class="tabelaPaciente">
+            <thead>
+                <th> Nome </th>
+                <th> Idade </th>
+                <th> Gênero </th>
+                <th> Peso (kg) </th>
+                <th> Altura (m) </th>
+                <th> IMC </th>
+                <th> Gordura Corporal (%) </th>
+                <th> Peso Ideal (kg) </th>
+                <th> TBM</th>
+            </thead>
+            <tbody id="listaPacientes"></tbody>
+        </table>
+    </div>   
+    </div>
+   <script type="module" src="./js/main.js"></script> 
+</body>
+</html>

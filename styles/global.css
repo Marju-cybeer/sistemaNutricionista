@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --color-base-text: #132A13;
+    --color-base-background: #ECF39E;
+    --color-base-green-100: #90A955;
+    --color-base-green-200: #4F772D;
+    --color-base-green-300: #31572C;
+}
+
+body{
+    font-family: "Epilogue", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: var(--color-base-background);
+    color: var(var(--color-base-text));
+
+}
+
+#app{
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+} 
+.logo{
+    
+    max-width: 10rem;
+    max-width: 10rem;
+    height: 10rem;
+    width: 10rem;
+    aspect-ratio: 5/6;
+    top: 7px;
+    left: 1rem;
+    background-image: url(logo.png);
+    position: fixed;
+    align-items: center;
+    z-index: 3;
+
+
+
+}
+.topo{
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 10px 0px 15px var(--color-base-background);
+    background-color: var(--color-base-green-200);
+    box-shadow: 0px 5px 15px var(--color-base-text);
+    padding: 2.6rem 3.2rem;
+    gap: 2.6rem;
+    z-index: 3;
+}
+
+.divisoria{
+    top: 65rem;
+    left: 100px;
+    position: fixed;
+    height: 65px;
+    right: 10px;
+    z-index: 3;
+    text-align: right;
+}
+
+.tabelaPacientes {
+    font-size: 1rem;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid  black;
+}
+tr:hover {background-color: coral;}
